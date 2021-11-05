@@ -1,5 +1,5 @@
 import web3 from './web3';
-import CurationStation from './client/src/contracts/CurationStation.json';
+import CurationStation from './build/CurationStation.json';
 
 const instance = new web3.eth.Contract (
     CurationStation.abi,
