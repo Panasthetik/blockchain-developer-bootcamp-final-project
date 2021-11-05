@@ -1,30 +1,30 @@
 # blockchain-developer-bootcamp-final-project
 
-# Contemporary art exhibition launch site: a platform for curators
+## Contemporary art exhibition launch site: a platform for curators
 
 
-# project public address (Vercel)
+### project public address (Vercel)
 
 
-# about this project
+### about this project
 
 
-# system requirements 
+### system requirements 
 
 
-# directory structure
+### directory structure
 
 
-# accessing the public deployment (Vercel)
+### accessing the public deployment (Vercel)
 
 
-# installation on a local host
+### installation on a local host
 
 
-# migrating, testing and Truffle
+### migrating, testing and Truffle
 
 
-# adapting, adding to and deploying this project for other uses
+### adapting, adding to and deploying this project for other uses
 
 
-# design process, scope and future considerations
+### design process, scope and future considerations
