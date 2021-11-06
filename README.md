@@ -13,6 +13,9 @@
 
 
 ### system requirements 
+Requires Node.js 14.8.0
+Requires NPM 6.14.15
+Requires Truffle / Ganache-CLI for testing and local deployment.
 
 
 ### directory structure
