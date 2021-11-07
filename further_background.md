@@ -2,7 +2,7 @@
   
 Typically contemporary art exhibitions have a high barrier to entry, and curatorial concerns exist primarily through reputation, financial clout, and word of mouth. A new platform to democratize the process of launching a show, networking for funding, and delegating tasks for implementation would be a welcome addition today and give aspiring curators a new outlet to quickly spin up a concept and search for funding.
 
-Why blockchain for this approach? The primary reasons for this choice of implementation on Ethereum are 1) decentralization of access (normal art world channels are elitist and exlusive to a few central insiders), 2) verifiable tracking and common participation in the proposal process on-chain, less prone to manipulation, and 3) a foundation for a future curatorial reputation system based on Ethereum address(es) - this would be part of a phased approach whereby identity, a social networking component, and DAO structure for governance could be added later for a future-proof rollout.   
+Why blockchain for this approach? The primary reasons for this choice of implementation on Ethereum are 1) decentralization of access (normal art world channels are elitist and exclusive to a few central insiders), 2) verifiable tracking and common participation in the proposal process on-chain, less prone to manipulation, and 3) a foundation for a future curatorial reputation system based on Ethereum address(es) - this would be part of a phased approach whereby identity, a social networking component, and DAO structure for governance could be added later for a future-proof rollout.   
     
 There are no timelocks, strict funding goal enforcements, refunds, or restrictions on donors (whitelisting) at present. This type of functionality is beyond the scope of this phase, and can be added later as part of a more complete implementation (DAO governance model with a multi-sig treasury is one possible approach).
 
@@ -18,7 +18,7 @@ It is tempting to try and incorporate all of the latest tech in a platform. For 
 
 4) A bridge to off-chain art market data aggregators such as Art.net - this could be accomplished through Chainlink and a data agreement with the art aggregator.
 
-5) Finally, auctions and marketplaces could definitely be integrated at a "Phase 3" stage, but it might be sensible to access the evolution of the digital art market in the near future to focus on the major players with the greatest longevity in the space.
+5) Finally, auctions and marketplaces could definitely be integrated at a "Phase 3" stage, but it might be sensible to assess the evolution of the digital art market in the near future to focus on the major players with the greatest longevity in the space.
 
 
 
