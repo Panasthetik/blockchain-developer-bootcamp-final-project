@@ -4,22 +4,32 @@ Typically contemporary art exhibitions have a high barrier to entry, and curator
 
 Why blockchain for this approach? The primary reasons for this choice of implementation on Ethereum are 1) decentralization of access (normal art world channels are elitist and exlusive to a few central insiders), 2) verifiable tracking and common participation in the proposal process on-chain, less prone to manipulation, and 3) a foundation for a future curatorial reputation system based on Ethereum address(es) - this would be part of a phased approach whereby identity, a social networking component, and DAO structure for governance could be added later for a future-proof rollout.   
     
-There are no timelocks, strict funding goal enforcement, refunds, or restrictions on donors (whitelisting) at present. This type of functionality is beyond the scope of this phase, and can be added later as part of a more complete implementation (DAO governance model with a multi-sig treasury is one possible approach).
+There are no timelocks, strict funding goal enforcements, refunds, or restrictions on donors (whitelisting) at present. This type of functionality is beyond the scope of this phase, and can be added later as part of a more complete implementation (DAO governance model with a multi-sig treasury is one possible approach).
 
-#### This Deployment (Expanded)  
-  
-1) On the Current Exhibitons page, the new curator can create an exhibition with the project details, suggested goal amount, and minimum contribution.
-     
-2) A new smart contract / exhibition address is created and listed on the Current Exhibitions page. For each listed exhibition, a link leads the user to a complete Exhibition Information page with all show details.
-  
-3) At the Exhibition Information page for each show, the user can either: A) send ETH to the project budget from the Contribute form at the top right (curator or patrons can both support exhibition), OR B) make an expense proposal by linking to the Expense Proposals page (link "View Expense Proposals" visible under Contribute Form).
-  
-4) At the Expense Proposals page, the curator of the show can fill out a "Create Expense Proposal form at the top of the page, submit it, and it will be added to the "Expense Proposals" table below. This functionality is restricted to curators only.
+#### Future Considerations for the Project
 
-5) At the Expense Proposals page, patrons (those who have contributed to the project) can Endorse a proposal by clicking the "Endorse" button on each proposal row.
+It is tempting to try and incorporate all of the latest tech in a platform. For instance, the following would be logical additions in light of the above goal:
 
-6) Once more then 50% of patrons have endorsed/approved the proposal (ex. "2/3") the curator may "Finalize the expense -- this triggers a transfer of the proposal amount to the listed vendor address.
+1) An NFT component - users have integration with OpenSea or Foundation to be able to "rep" artists and pitch collections of NFT's in a potential exhibition : virtual, physical or hybrid.
 
-7) Once Expense Proposals are finalized, they are no longer active but are listed as archived proposals in the table.
+2) A native token - if indeed a DAO governance model is introduced to the platform, a native governance token allowing the curators to pitch multiple shows, receive royalties from exhibition performance, and maintain voting rights within the community would be an idea.
+
+3) A decentralized identity framework such as IDX - curator profiles would be portable, reputaton-focused, and user-controlled in the context of integration with off-chain platforms such as Discord, with a potential bridge to oracles and other social Dapps. In addition, a common sign-in with Ethereum will be a priority to establish industry standards in this area.
+
+4) A bridge to off-chain art market data aggregators such as Art.net - this could be accomplished through Chainlink and a data agreement with the art aggregator.
+
+5) Finally, auctions and marketplaces could definitely be integrated at a "Phase 3" stage, but it might be sensible to access the evolution of the digital art market in the near future to focus on the major players with the greatest longevity in the space.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
