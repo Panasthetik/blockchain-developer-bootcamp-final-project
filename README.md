@@ -41,7 +41,7 @@ Requires Truffle / Ganache-CLI for testing and local deployment.
 
 
 ### Directory Structure
-#### Root Directory:
+#### root
 
 Essential for this project to run - do not overwrite:
 
