@@ -41,8 +41,30 @@ Requires Truffle / Ganache-CLI for testing and local deployment.
 
 
 ### Directory Structure
-TBD
+#### Root Directory:
 
+Essential for this project to run - do not overwrite:
+
+.eslint.json
+server.js
+routes.js
+package.json (lists/ installs all dependencies)
+
+NOTE:  The project uses Next.js as a server (server.js). It also uses Next Routes (routes.js) for dynamic page generation and routing.
+
+#### components
+
+Contains all React components / hooks (do not overwrite)
+
+#### ethereum 
+
+Contains all smart contracts ('./contracts), build artifacts ('./build'), migration files ('./migrations'), test files ('./test') and 'truffle-config.js'  
+  
+Also contains web3 connector files / contract instances - ('exhibition.js', 'station.js', 'web3.js');
+
+#### pages
+
+Contains all main React pages for the app - ('index.js', '_app.js') with separate folders for 'exhibition' pages and 'requests' index.
 
 ### Accessing The Public Deployment (Vercel)
 TBD
