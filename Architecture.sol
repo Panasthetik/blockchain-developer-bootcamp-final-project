@@ -2,8 +2,6 @@
 
 pragma solidity 0.8.0;
 
-import "./Exhibition.sol";
-
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -18,8 +16,7 @@ contract CurationStation is Ownable, Pausable {
         _unpause();
     }
     
-    function launchExhibition(uint minimum, string memory title,
-        string memory description) public whenNotPaused {
+    function launchExhibition() public whenNotPaused {
 
         /// function logic goes here
 
