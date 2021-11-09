@@ -1,12 +1,12 @@
 const path = require("path");
-require('dotenv').config({path: './.env'});
+require('dotenv').config({path: '../.env'});
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const Web3 = require("web3");
 const MetaMaskAccountIndex = 0;
 //
 
 module.exports = {
-contracts_build_directory: path.join(__dirname, "./build"),
+contracts_build_directory: path.join(__dirname, "./build/contracts"),
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -30,9 +30,16 @@ contracts_build_directory: path.join(__dirname, "./build"),
     network_id: "*",       // Any network (default: none)
   },
 
+  ganache_local: {
+    provider: function() {
+      return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:7545", MetaMaskAccountIndex)
+    },
+    network_id: 5777,
+  },
+
   ropsten: {
     provider: function() {
-      return new HDWalletProvider(process.env.MNEMONIC, "<YOUR INFURA API KEY>");
+      return new HDWalletProvider(process.env.MNEMONIC, "wss://ropsten.infura.io/ws/v3/" + process.env.INFURA_API_KEY);
     },
       network_id: 3,       // Ropsten's id
     gas: 7500000,
@@ -55,7 +62,7 @@ contracts_build_directory: path.join(__dirname, "./build"),
     // NB: It's important to wrap the provider as a function.
     kovan: {
     provider: function() {
-      return new HDWalletProvider(process.env.MNEMONIC, "<YOUR INFURA API KEY>");
+      return new HDWalletProvider(process.env.MNEMONIC, "wss://kovan.infura.io/ws/v3/" + process.env.INFURA_API_KEY);
     },
   
       network_id: 42,
