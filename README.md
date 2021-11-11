@@ -81,9 +81,3 @@ TBD
 
 ### migrating, testing and Truffle
 TBD
-
-### adapting, adding to and deploying this project for other uses
-TBD
-
-### design process, scope and future considerations
-See "Further Background" markdown file.
