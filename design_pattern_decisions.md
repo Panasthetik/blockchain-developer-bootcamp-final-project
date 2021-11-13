@@ -4,11 +4,11 @@
 
 #### CurationStation.sol
 
-##### Circuit Breaker with Ownable/Pausable
-1. Ownable: this contract specifies that only the deployer of this factory contract can pause it
-2. Pausable: this contract allows the owner to pause or unpause
+##### Access Control Design Pattern / Circuit Breaker with Ownable/Pausable
+1. Ownable: this contract specifies that only the deployer of this factory contract can pause/unpause it
+2. Pausable: this contract allows the owner to pause or unpause CurationStation
 
-##### Inheritance
+##### Inheritance and/or Interface
 1. This contract inherits from to library contracts: (Ownable, Pausable)
 2. This contract makes active use of the inherited functions (ex: isPaused)
 
@@ -19,6 +19,7 @@
 #### Exhibition.sol
 
 TBD
+1. State Machine TBD
 
 
 
