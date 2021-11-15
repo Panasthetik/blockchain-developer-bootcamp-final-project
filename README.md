@@ -19,7 +19,7 @@ For Phase One, at the very basic level this project component allows any aspirin
 
 ### Example User Workflow
 
-1) On the Current Exhibitons page, the new Curator can create an exhibition.
+1) On the Current Exhibitions page, the new Curator can create an exhibition.
      
 2) A new smart contract / Exhibition address is created and listed on the Current Exhibitions page. A link for each leads the user to a complete Exhibition Information page.
   
