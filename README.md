@@ -32,13 +32,17 @@ For Phase One, at the very basic level this project component allows any aspirin
 6) After more then 50% of Patrons have endorsed/approved the proposal (ex. "2/3") the Curator may "Finalize" the expense -- this triggers a transfer of the proposal amount to the listed vendor address.  
      
 ### System Requirements
-Requires MetaMask to run this app in the browser.   
+Requires MetaMask to run this app in the browser.    
+   
+NOTE: For the Vercel / public deployment connected to the Kovan testnet on chainID 42, please allow at least FOUR MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
+    
+NOTE: For the Ganache-CLI local deployment, please be sure to change the contract instance address in "station.js" (see instructions below), and to paste the Ganache-CLI mnemonic into MetaMask and initialize at least FOUR test accounts on Localhost Port 8545 before "npm run build" and "npm start".  
+
+  
 Requires Node.js 14.8.0.   
 Requires NPM 6.14.15.   
 Requires Truffle / Ganache-CLI for testing and local deployment.  
-
-
-
+   
 ### Directory Structure
 #### root
 
