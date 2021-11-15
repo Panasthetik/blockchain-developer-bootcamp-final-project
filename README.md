@@ -15,7 +15,7 @@ See "Further Background" markdown file for more detailed background and future p
   
 #### This Deployment  
     
-For Phase One, at the very basic level this project component allows any aspiring curator to create an exhibiton, launch it with a funding minimum and show information, take contributions from patrons, and make expense proposals which can be endorsed by project patrons before withdrawal to a vendor by the curator (greater than 50% endorsement by patrons allows expenses to be transferred to a vendor address). 
+For Phase One, at the very basic level this project component allows any aspiring curator to create an exhibition, launch it with a funding minimum and show information, take contributions from patrons, and make expense proposals which can be endorsed by project patrons before withdrawal to a vendor by the curator (greater than 50% endorsement by patrons allows expenses to be transferred to a vendor address). 
 
 ### Example User Workflow
 
@@ -34,9 +34,9 @@ For Phase One, at the very basic level this project component allows any aspirin
 ### System Requirements
 Requires MetaMask to run this app in the browser.    
    
-NOTE: For the Vercel / public deployment connected to the Kovan testnet on chainID 42, please allow at least FOUR MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
+NOTE: For the Vercel / public deployment connected to the Kovan testnet on ChainID 42, please allow at least FOUR MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
     
-NOTE: For the Ganache-CLI local deployment, please be sure to change the contract instance address in "station.js" (see instructions below), and to paste the Ganache-CLI mnemonic into MetaMask and initialize at least FOUR test accounts on Localhost Port 8545 before "npm run build" and "npm start".  
+NOTE: For the Ganache-CLI local deployment, please be sure to change the contract instance address in "ethereum/station.js" (see instructions below), and to paste the Ganache-CLI mnemonic into MetaMask and initialize at least FOUR test accounts on Localhost Port 8545 before "npm run build" and "npm start".  
 
   
 Requires Node.js 14.8.0.   
