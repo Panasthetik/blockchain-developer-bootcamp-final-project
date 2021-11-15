@@ -43,8 +43,7 @@ Requires Truffle / Ganache-CLI for testing and local deployment.
 #### root
 
 Essential for this project to run - do not overwrite:
-
-next.config.js   
+    
 .eslint.json   
 server.js    
 routes.js   
