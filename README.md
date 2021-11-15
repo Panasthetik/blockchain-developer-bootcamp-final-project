@@ -86,8 +86,8 @@ TBD
      
 2) The proposal table does not always dynamically refresh when more patrons "Endorse", or when the Curator completes "Finalize", but can immediately update by refreshing the browser. This is also a React issue (see above). The components need to be rewritten as functional components and the "router" refresh needs a different state/props configuraton with React context. This is outside the project scope and will be done for a future release (see "Further Background" markdown file). 
 
-### LEGAL DISCLAIMER
-The name "Curation Station " and Vercel domain name "curationstation" are only used in the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission, and are not used or intended for commercial purposes.   
+##### LEGAL DISCLAIMER
+###### The name "Curation Station " and Vercel domain name "curationstation" are only used in the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission, and are not used or intended for commercial purposes.   
 
 No commercial rights or claims for future use are assumed or encouraged for the above mentioned name(s). Panasthetik / the holders of this GitHub account accept no responsibility for any improper use of these names outside the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission.
 
