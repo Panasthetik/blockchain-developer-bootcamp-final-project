@@ -89,5 +89,5 @@ TBD
 ##### LEGAL DISCLAIMER
 ###### The name "Curation Station " and Vercel domain name "curationstation" are only used in the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission, and are not used or intended for commercial purposes.   
 
-No commercial rights or claims for future use are assumed or encouraged for the above mentioned name(s). Panasthetik / the holders of this GitHub account accept no responsibility for any improper use of these names outside the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission.
+###### No commercial rights or claims for future use are assumed or encouraged for the above mentioned name(s). Panasthetik / the holders of this GitHub account accept no responsibility for any improper use of these names outside the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission.
 
