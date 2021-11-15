@@ -1,6 +1,6 @@
 # blockchain-developer-bootcamp-final-project
 
-## Contemporary art exhibition launch site: a platform for curators
+## Curation Station: A Platform For Contemporary Art Curators
 
 
 ### Project Public Address (Vercel)
@@ -80,4 +80,11 @@ TBD
 
 
 ### migrating, testing and Truffle
+
+
 TBD
+
+### LEGAL DISCLAIMER
+Note: the name "Curation Station " and Vercel domain name "curationstation" are only used in the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission, and are not used or intended for commercial purposes.   
+No commercial rights or claims for future use are assumed or encouraged for the above mentioned name(s). Panasthetik / the holders of this GitHub account accept no responsibility for any improper use of these names outside the context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission.
+
