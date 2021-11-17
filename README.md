@@ -87,10 +87,9 @@ TBD
 ### Known Issues
 1) The MetaMask connect button does not always refresh to show wallet connection and chainID even if just connected through MetaMask pop-up.  It can update network information simply by hitting "Connect." This is an issue with React "state" and "props" and will have to be corrected in a future update. The fix is to rewrite all class components as functional components and use hooks / React context instead, along with expanded "web3-react".    
      
-2) The proposal table does not always dynamically refresh when more patrons "Endorse", or when the Curator completes "Finalize", but can immediately update by refreshing the browser. This is also a React issue (see above). The components need to be rewritten as functional components and the "router" refresh needs a different state/props configuraton with React context. This is outside the project scope and will be done for a future release (see "Further Background" markdown file). 
+2) The proposal table does not always dynamically refresh when more patrons "Endorse", or when the Curator completes "Finalize", but can immediately update by refreshing the browser. This is also a React issue (see above). The components need to be rewritten as functional components and the "router" refresh needs a different state/props configuraton with React context. This is outside the project scope and will be done for a future release (see "Further Background" markdown file).    
+   
+3) Relative vs. absolute path bug on Proposal page (Next routes): sometimes the path on the Vercel deployment changes to relative path (ex: "/exhibitions/0x00......." instead of "/exhibitions/show?address=0x00.......") after a proposal is endorsed or finalized. This can be corrected in the browser by using the back button (/curationstation.vercel.app) and refreshing the navigation.
 
-##### LEGAL DISCLAIMER
-###### The name(s) "Curation Station", "CurationStation", and the Vercel domain name "curationstation" are only used in the testing and evaluation context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission, and are not used or intended for commercial purposes.   
 
-###### No commercial rights or claims for future use are assumed or encouraged for the above mentioned name(s). Panasthetik / the holders of this GitHub account accept no responsibility for any improper use of these names outside the strictly non-commercial, developer context of "ConsenSys Blockchain Developer Bootcamp 2021" final project submission.
 
