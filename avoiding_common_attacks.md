@@ -11,8 +11,9 @@ The compiler pragma "0.8.0" was strictly used by all smart contracts in this pro
 3) OnlyFunded Modifier : The "require" statement is used for an Exhibition balance to exist before an expense proposal can be created (Curator cannot initiate a withdrawal without a budget).
 4) Require "bool (success, )" is added to verify transaction completion.
 
-#### use .call() instead of .transfer() or .send() in Exhibitions.sol
-The contract used 'recipient.call{value: proposal.value}("")' instead of ".transfer()"; 
+#### Uses .call() instead of .transfer() or .send() in Exhibitions.sol
+The contract used 'recipient.call{value: proposal.value}("")' instead of ".transfer()";  
+Depends on bool completion, "success"; 
    
 #### Emergency Brake
 1. Ownable: this contract specifies that the deployer (Owner) of this factory contract can pause/unpause it due to emergency or improper use.   
