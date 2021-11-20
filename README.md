@@ -2,8 +2,11 @@
 ## Curation Station: A Platform For Contemporary Art Curators
 
 
-### Project Public Address (Vercel)
+### Project Public Address (Vercel W/ Kovan Contract Deployment)
 TBD
+
+NOTE: For the Vercel / public deployment connected to the Kovan testnet on ChainID 42, please allow at least THREE unique MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
+    
 
 ### About This Project 
 
@@ -16,6 +19,27 @@ See "Further Background" markdown file for more detailed information and future 
 #### This Deployment  
     
 For Phase One, at the very basic level this project component allows any aspiring curator to create an exhibition, launch it with a funding minimum and all exhibition information, take contributions from patrons, and make expense proposals which can be endorsed by project patrons before withdrawal to a vendor by the curator (greater than 50% endorsement by patrons allows expenses to be transferred to a vendor address). 
+
+### System Requirements (for migrating, testing and local deployment)
+
+Requires Node.js 14.8.0.   
+Requires NPM 6.14.15.   
+Requires Truffle / Ganache-CLI for testing and local deployment.  
+
+Requires MetaMask to run this app in the browser.    
+        
+NOTE: For the ``` ganache-cli ```  local deployment, please be sure to change the contract instance address in ``` ethereum/station.js ```  (see instructions below), and to paste the ``` ganache-cli ```  mnemonic into MetaMask and initialize at least THREE unique test accounts on ``` localhost port 8545 ```  before ``` npm run build ``` and ``` npm start ``` .  
+
+  
+### Accessing The Public Deployment (Vercel)
+TBD
+
+### installation on a local host
+
+TBD
+
+### migrating, testing and Truffle
+TBD
 
 ### Example User Workflow
 
@@ -31,30 +55,21 @@ For Phase One, at the very basic level this project component allows any aspirin
 
 6) After more then 50% of Patrons have endorsed/approved the proposal (ex. "2/3") the Curator may "Finalize" the expense -- this triggers a transfer of the proposal amount to the listed vendor address.  
      
-### System Requirements
-Requires MetaMask to run this app in the browser.    
-   
-NOTE: For the Vercel / public deployment connected to the Kovan testnet on ChainID 42, please allow at least FOUR MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
-    
-NOTE: For the Ganache-CLI local deployment, please be sure to change the contract instance address in "ethereum/station.js" (see instructions below), and to paste the Ganache-CLI mnemonic into MetaMask and initialize at least FOUR test accounts on Localhost Port 8545 before "npm run build" and "npm start".  
-
-  
-Requires Node.js 14.8.0.   
-Requires NPM 6.14.15.   
-Requires Truffle / Ganache-CLI for testing and local deployment.  
-   
 ### Directory Structure
 
+  
 ``` root ```    
 Essential for this project to run - do not overwrite: ``` eslint.json ``` ``` server.js ``` ``` routes.js ``` ``` package.json ```   
      
 NOTE:  The project uses Next.js as a server ( ```server.js ``` ). It also uses Next Routes ( ``` routes.js ``` ) for dynamic page generation and routing.
+  
    
 
 ``` components ```
 Contains all React components / hooks.
       
 
+   
 ``` ethereum ```     
 Contains all smart contracts, build artifacts, migration files, and test files :       
 ``` ./contracts ```        
@@ -65,20 +80,13 @@ Contains all smart contracts, build artifacts, migration files, and test files :
 
 Also contains web3 connector files / contract instances - ``` exhibition.js ``` ,  ``` station.js ``` , ``` web3.js ``` ;  
 
+   
 
 ``` pages ```  
 Contains all main React pages for the app - (``` index.js ``` , ``` _app.js ``` ) with separate folders for ``` ./exhibition ```  pages and  the ``` ./requests ``` index.
 
 
-### Accessing The Public Deployment (Vercel)
-TBD
-
-### installation on a local host
-TBD
-
-
-### migrating, testing and Truffle
-TBD
+  
 
 ### Known Issues
 1) The MetaMask connect button does not always refresh to show wallet connection and chainID even if just connected through MetaMask pop-up.  It can update network information simply by hitting "Connect." This is an issue with React "state" and "props" and will have to be corrected in a future update. The fix is to rewrite all class components as functional components and use hooks / React context instead, along with expanded "web3-react".    
