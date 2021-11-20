@@ -44,16 +44,11 @@ Requires NPM 6.14.15.
 Requires Truffle / Ganache-CLI for testing and local deployment.  
    
 ### Directory Structure
-#### root
 
-Essential for this project to run - do not overwrite:
-    
-.eslint.json   
-server.js    
-routes.js   
-package.json (lists/ installs all dependencies)   
-  
-NOTE:  The project uses Next.js as a server (server.js). It also uses Next Routes (routes.js) for dynamic page generation and routing.
+``` root ```
+Essential for this project to run - do not overwrite: ``` eslint.json ``` ``` server.js ``` ``` routes.js ``` ``` package.json ```   
+     
+NOTE:  The project uses Next.js as a server ( ```server.js ``` ). It also uses Next Routes (routes.js) for dynamic page generation and routing.
 
 ``` components ```
 
