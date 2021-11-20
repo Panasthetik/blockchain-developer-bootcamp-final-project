@@ -78,10 +78,14 @@ Ensure MetaMask connects on ``` Localhost 8545 ``` with ChainId 1337.
 If not, use the ``` Connect To MetaMask ``` button which should show the connected account and ChainId.   
 
 
-### Migrating, Testing and Truffle
-TBD
-
-
+### Migrating and Testing Smart Contracts Only    
+     
+``` git clone ``` this repository      
+``` cd <root> ``` directory, and then ``` npm install ```          
+``` cd ethereum ``` and  ``` truffle migrate ``` : test default ``` development ```  is set to Port 8545     
+``` truffle test ```  : there are seven unit tests in  ``` test/Exhibition.test.js ```   ;
+    
+              
 ### Directory Structure
 
   
