@@ -3,7 +3,7 @@
 
 
 ### Project Public Address (Vercel W/ Kovan Contract Deployment)
-[https://curationstation.vercel.app/]
+https://curationstation.vercel.app
 
 NOTE: For the Vercel / public deployment connected to the Kovan testnet on ChainID 42, please allow at least THREE unique MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
 
