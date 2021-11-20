@@ -2,7 +2,7 @@
 ## Curation Station: A Platform For Contemporary Art Curators
 
 
-### Project Public Address (Vercel W/ Kovan Contract Deployment)
+### Project Public Address (Vercel w/ Kovan Contract Deployment)
 https://curationstation.vercel.app
 
 NOTE: For the Vercel / public deployment connected to the Kovan testnet on ChainID 42, please allow at least THREE unique MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
@@ -23,7 +23,7 @@ This project is a small component (Phase One) in a larger framework for curators
 
 See "Further Background" markdown file for more detailed information and future planning.
 
-#### System Requirements (for migrating, testing and local deployment)
+#### System Requirements
 
 Requires Node.js 14.8.0.   
 Requires NPM 6.14.15.   
@@ -54,16 +54,12 @@ For Phase One, at the very basic level this project component allows any aspirin
 
 6) After more then 50% of Patrons have endorsed/approved the proposal (ex. "2/3") the Curator may "Finalize" the expense -- this triggers a transfer of the proposal amount to the listed vendor address.  
      
-
-
-### Accessing The Public Deployment (Vercel)
-TBD
-
-### installation on a local host
+    
+### Installation On A Local Host
 
 TBD
 
-### migrating, testing and Truffle
+### Migrating, Testing and Truffle
 TBD
 
 
