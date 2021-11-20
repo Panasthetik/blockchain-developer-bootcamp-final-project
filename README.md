@@ -49,8 +49,8 @@ For Phase One, at the very basic level this project component allows any aspirin
      
 2) A new smart contract / Exhibition address is then created and listed on the Current Exhibitions page. A ``` View Exhibition ```  button for each leads the user to a complete Exhibition Information page.
   
-3) At the Exhibition Information page for each show, the user can either: A) send ETH to the project budget from the ``` Become An Arts Patron ``` contribute form at the top right, OR B) go to the "Expense Proposals" page for the project by clicking the ``` View Expense Proposals ``` button below the Contribute Form."   
-   
+3) At the Exhibition Information page for each show, the user can either: A) send ETH to the project budget from the ``` Become An Arts Patron ``` contribute form at the top right, OR B) go to the "Expense Proposals" page for the project by clicking the ``` View Expense Proposals ``` button below the Contribute Form.      
+      
 NOTE: the Exhibition Information dynamically updates the following based on change to smart contract state: a) Exhibition Budget (remaining), b) number of Patrons, c) Proposals count; All other values are fixed at contract creation.   
      
 4) At the Expense Proposals page, the Curator of the show can fill out a "Create Expense Proposal" form at the top of the page, ``` Create ```  it, and it will be immediately added to the "Expense Proposals" table below. This functionality is restricted to CURATORS ONLY and MetaMask will display an error if not followed.
@@ -61,19 +61,21 @@ NOTE: the Exhibition Information dynamically updates the following based on chan
         
     
 ### Installation On A Local Host
-``` git clone ``` this repository   
-``` cd <root> ``` directory, and then ``` npm install ```   
-``` cd ethereum ``` and  ``` ganache-cli ``` : development is set to Port 8545
-In a new terminal: ``` truffle migrate --reset --network development ```
-
-After the contracts are deployed, copy the contract address for "CurationStation" listed in Truffle console. Open the file ``` ethereum/station.js ```  and paste the address into Line 12;   
-
-``` cd <root> ``` directory, and open a new terminal;
-``` npm run build ``` and then ``` npm start ```   
-     
-The React app will be running on ``` localhost:3000 ```    
-
-Ensure MetaMask connects on ``` Localhost 8545 ``` with ChainId 1337. If not, use the ``` Connect To MetaMask ``` button which should show the connected account and ChainId.   
+``` git clone ``` this repository      
+``` cd <root> ``` directory, and then ``` npm install ```          
+``` cd ethereum ``` and  ``` ganache-cli ``` : development is set to Port 8545      
+In a new terminal: ``` truffle migrate --reset --network development ```     
+       
+After the contracts are deployed, copy the contract address for "CurationStation" listed in Truffle console. Open the file ``` ethereum/station.js ```  and paste the address into Line 12;         
+       
+``` cd <root> ``` directory, and open a new terminal;       
+``` npm run build ``` and then ``` npm start ```            
+                
+The React app will be running on ``` localhost:3000 ```              
+           
+Ensure MetaMask connects on ``` Localhost 8545 ``` with ChainId 1337.     
+       
+If not, use the ``` Connect To MetaMask ``` button which should show the connected account and ChainId.   
 
 
 ### Migrating, Testing and Truffle
