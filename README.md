@@ -6,8 +6,15 @@
 TBD
 
 NOTE: For the Vercel / public deployment connected to the Kovan testnet on ChainID 42, please allow at least THREE unique MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
-    
 
+
+### Ethereum Address For NFT Certification:
+TBD     
+
+    
+### Video Walkthroughs Of This Project:
+TBD   
+   
 ### About This Project 
 
 #### Background  
@@ -15,10 +22,6 @@ NOTE: For the Vercel / public deployment connected to the Kovan testnet on Chain
 This project is a small component (Phase One) in a larger framework for curators to have a complete platform for launching, organizing, and tracking art exhibitions from origination to final gallery installation.
 
 See "Further Background" markdown file for more detailed information and future planning.
-  
-#### This Deployment  
-    
-For Phase One, at the very basic level this project component allows any aspiring curator to create an exhibition, launch it with a funding minimum and all exhibition information, take contributions from patrons, and make expense proposals which can be endorsed by project patrons before withdrawal to a vendor by the curator (greater than 50% endorsement by patrons allows expenses to be transferred to a vendor address). 
 
 ### System Requirements (for migrating, testing and local deployment)
 
@@ -31,16 +34,12 @@ Requires MetaMask to run this app in the browser.
 NOTE: For the ``` ganache-cli ```  local deployment, please be sure to change the contract instance address in ``` ethereum/station.js ```  (see instructions below), and to paste the ``` ganache-cli ```  mnemonic into MetaMask and initialize at least THREE unique test accounts on ``` localhost port 8545 ```  before ``` npm run build ``` and ``` npm start ``` .  
 
   
-### Accessing The Public Deployment (Vercel)
-TBD
+  
+#### This Deployment  
+    
+For Phase One, at the very basic level this project component allows any aspiring curator to create an exhibition, launch it with a funding minimum and all exhibition information, take contributions from patrons, and make expense proposals which can be endorsed by project patrons before withdrawal to a vendor by the curator (greater than 50% endorsement by patrons allows expenses to be transferred to a vendor address).   
 
-### installation on a local host
-
-TBD
-
-### migrating, testing and Truffle
-TBD
-
+   
 ### Example User Workflow
 
 1) On the Current Exhibitions page, the new Curator can create an exhibition.
@@ -55,6 +54,19 @@ TBD
 
 6) After more then 50% of Patrons have endorsed/approved the proposal (ex. "2/3") the Curator may "Finalize" the expense -- this triggers a transfer of the proposal amount to the listed vendor address.  
      
+
+
+### Accessing The Public Deployment (Vercel)
+TBD
+
+### installation on a local host
+
+TBD
+
+### migrating, testing and Truffle
+TBD
+
+
 ### Directory Structure
 
   
