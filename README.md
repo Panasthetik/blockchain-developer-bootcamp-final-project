@@ -55,7 +55,7 @@ package.json (lists/ installs all dependencies)
   
 NOTE:  The project uses Next.js as a server (server.js). It also uses Next Routes (routes.js) for dynamic page generation and routing.
 
-#### components
+``` components ```
 
 Contains all React components / hooks (do not overwrite)
 
