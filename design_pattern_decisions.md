@@ -14,21 +14,8 @@
 2. This contract makes active use of the inherited function modifier in Pausable (ex: "whenNotPaused" allows active state to continue)
 
 ##### Factory Contract
-1. Project functionality it divided into a "factory" launcher contract (CurationStation) and the exhibition template (Exhibition)
-2. TBD - a new exhibition cannot come from outside CurationStation.sol, to be implemented.
-
-
-#### Exhibition.sol
-
-#### TBD
-
-##### State Machine TBD
-
-##### Ether withdrawal / transfer restrictions (state, no auto) TBD
-
-##### string validation TBD
-
-
+1. Project functionality is divided into a "factory" launcher contract (CurationStation) and the exhibition template (Exhibition)
+2. User gas costs and Ethereum fees for launching a new exhibition are delegated to the prospective Curator. 
 
 
 
