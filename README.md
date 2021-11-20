@@ -45,22 +45,36 @@ For Phase One, at the very basic level this project component allows any aspirin
    
 ### Example User Workflow
 
-1) On the Current Exhibitions page, the new Curator can create an exhibition.
+1) On the Current Exhibitions page, the new Curator can create an exhibition by selecting the ``` Launch Exhibition ```  button. This takes them to the "Launch An Exhibition" form, with the ``` Launch ``` button for submission after the Exhibition info is entered.
      
-2) A new smart contract / Exhibition address is created and listed on the Current Exhibitions page. A link for each leads the user to a complete Exhibition Information page.
+2) A new smart contract / Exhibition address is then created and listed on the Current Exhibitions page. A ``` View Exhibition ```  button for each leads the user to a complete Exhibition Information page.
   
-3) At the Exhibition Information page for each show, the user can either: A) send ETH to the project budget from the Contribute Form at the top right, OR B) go to the "Expense Proposals" page for the project by clicking the "View Expense Proposals" link below the Contribute Form." NOTE: the Exhibition Information dynamically updates the following based on change to smart contract state: a) Exhibition Budget (remaining), b) number of Patrons, c) Proposals count; All other values are fixed at contract creation.   
-     
-4) At the Expense Proposals page, the Curator of the show can fill out a "Create Expense Proposal" form at the top of the page, submit it, and it will be immediately added to the "Expense Proposals" table below. This functionality is restricted to CURATORS ONLY and MetaMask will display an error if not followed.
+3) At the Exhibition Information page for each show, the user can either: A) send ETH to the project budget from the ``` Become An Arts Patron ``` contribute form at the top right, OR B) go to the "Expense Proposals" page for the project by clicking the ``` View Expense Proposals ``` button below the Contribute Form."   
    
-5) At the Expense Proposals page, Patrons (those who have contributed to the project) can Endorse a proposal by clicking the "Endorse" button on each proposal row.
-
-6) After more then 50% of Patrons have endorsed/approved the proposal (ex. "2/3") the Curator may "Finalize" the expense -- this triggers a transfer of the proposal amount to the listed vendor address.  
+NOTE: the Exhibition Information dynamically updates the following based on change to smart contract state: a) Exhibition Budget (remaining), b) number of Patrons, c) Proposals count; All other values are fixed at contract creation.   
      
+4) At the Expense Proposals page, the Curator of the show can fill out a "Create Expense Proposal" form at the top of the page, ``` Create ```  it, and it will be immediately added to the "Expense Proposals" table below. This functionality is restricted to CURATORS ONLY and MetaMask will display an error if not followed.
+   
+5) At the Expense Proposals page, Patrons (those who have contributed to the project) can "Endorse" a proposal by clicking the ``` Endorse ```  button on each proposal row.
+
+6) After more then 50% of Patrons have endorsed/approved the proposal (ex. "2/3") the Curator may "Finalize" the expense by hitting ``` Finalize ```  -- this triggers a transfer of the proposal amount to the listed vendor address.  
+        
     
 ### Installation On A Local Host
+``` git clone ``` this repository   
+``` cd <root> ``` directory, and then ``` npm install ```   
+``` cd ethereum ``` and  ``` ganache-cli ``` : development is set to Port 8545
+In a new terminal: ``` truffle migrate --reset --network development ```
 
-TBD
+After the contracts are deployed, copy the contract address for "CurationStation" listed in Truffle console. Open the file ``` ethereum/station.js ```  and paste the address into Line 12;   
+
+``` cd <root> ``` directory, and open a new terminal;
+``` npm run build ``` and then ``` npm start ```   
+     
+The React app will be running on ``` localhost:3000 ```    
+
+Ensure MetaMask connects on ``` Localhost 8545 ``` with ChainId 1337. If not, use the ``` Connect To MetaMask ``` button which should show the connected account and ChainId.   
+
 
 ### Migrating, Testing and Truffle
 TBD
