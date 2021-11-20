@@ -45,29 +45,30 @@ Requires Truffle / Ganache-CLI for testing and local deployment.
    
 ### Directory Structure
 
-``` root ```
+``` root ```    
 Essential for this project to run - do not overwrite: ``` eslint.json ``` ``` server.js ``` ``` routes.js ``` ``` package.json ```   
      
-NOTE:  The project uses Next.js as a server ( ```server.js ``` ). It also uses Next Routes (routes.js) for dynamic page generation and routing.
+NOTE:  The project uses Next.js as a server ( ```server.js ``` ). It also uses Next Routes ( ``` routes.js ``` ) for dynamic page generation and routing.
+   
 
 ``` components ```
+Contains all React components / hooks.
+      
 
-Contains all React components / hooks (do not overwrite)
+``` ethereum ```     
+Contains all smart contracts, build artifacts, migration files, and test files :       
+``` ./contracts ```        
+``` ./build ```      
+``` ./migrations ```     
+``` ./test ```        
+```  truffle-config.js  ```  
 
-#### ethereum 
+Also contains web3 connector files / contract instances - ``` exhibition.js ``` ,  ``` station.js ``` , ``` web3.js ``` ;  
 
-Contains all:    
-smart contracts ('./contracts),     
-build artifacts ('./build'),    
-migration files ('./migrations'),    
-test files ('./test')    
-'truffle-config.js'  
-     
-Also contains web3 connector files / contract instances - ('exhibition.js', 'station.js', 'web3.js');
 
-#### pages
+``` pages ```  
+Contains all main React pages for the app - (``` index.js ``` , ``` _app.js ``` ) with separate folders for ``` ./exhibition ```  pages and  the ``` ./requests ``` index.
 
-Contains all main React pages for the app - ('index.js', '_app.js') with separate folders for 'exhibition' pages and 'requests' index.
 
 ### Accessing The Public Deployment (Vercel)
 TBD
