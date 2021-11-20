@@ -25,10 +25,13 @@ See "Further Background" markdown file for more detailed information and future 
 
 #### System Requirements
 
-Requires Node.js 14.8.0.   
-Requires NPM 6.14.15.   
-Requires Truffle / Ganache-CLI for testing and local deployment.  
-
+Requires Node.js 14.8.0      
+Requires NPM 6.14.15   
+   
+Requires Truffle / Ganache-CLI for testing and local deployment:  
+Ganache-CLI: ^6.12.2   
+Truffle ^5.4.18   
+    
 Requires MetaMask to run this app in the browser.    
         
 NOTE: For the ``` ganache-cli ```  local deployment, please be sure to change the contract instance address in ``` ethereum/station.js ```  (see instructions below), and to paste the ``` ganache-cli ```  mnemonic into MetaMask and initialize at least THREE unique test accounts on ``` localhost port 8545 ```  before ``` npm run build ``` and ``` npm start ``` .  
