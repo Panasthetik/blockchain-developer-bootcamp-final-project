@@ -3,16 +3,16 @@
 
 
 ### Project Public Address (Vercel W/ Kovan Contract Deployment)
-TBD
+[https://curationstation.vercel.app/]
 
 NOTE: For the Vercel / public deployment connected to the Kovan testnet on ChainID 42, please allow at least THREE unique MetaMask accounts with Kovan test ETH to be able to use all of the core functionality.
 
 
-### Ethereum Address For NFT Certification:
+### Ethereum Address For NFT Certification
 TBD     
 
     
-### Video Walkthroughs Of This Project:
+### Video Walkthroughs Of This Project
 TBD   
    
 ### About This Project 
@@ -23,7 +23,7 @@ This project is a small component (Phase One) in a larger framework for curators
 
 See "Further Background" markdown file for more detailed information and future planning.
 
-### System Requirements (for migrating, testing and local deployment)
+#### System Requirements (for migrating, testing and local deployment)
 
 Requires Node.js 14.8.0.   
 Requires NPM 6.14.15.   
