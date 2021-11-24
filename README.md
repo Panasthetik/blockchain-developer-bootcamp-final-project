@@ -25,7 +25,8 @@ See "Further Background" markdown file for more detailed information and future 
 
 #### System Requirements
 
-Requires Node.js 14.8.0      
+Requires Node.js 14.8.0 (specific Node version required to install and run locally - ``` nvm install 14.8.0 ``` or ``` nvm use 14.8.0 ``` in project directory)    
+      
 Requires NPM 6.14.15   
    
 Requires Truffle / Ganache-CLI for testing and local deployment:  
@@ -60,11 +61,16 @@ NOTE: the Exhibition Information dynamically updates the following based on chan
 6) After more then 50% of Patrons have endorsed/approved the proposal (ex. "2/3") the Curator may "Finalize" the expense by hitting ``` Finalize ```  -- this triggers a transfer of the proposal amount to the listed vendor address.  
         
     
-### Installation On A Local Host
+### Installation On A Local Host   
+   
+NOTE: Truffle and Ganache-CLI should be installed globally before installation.  This local install is tested and running on Linux (Ubuntu 20.04 LTS) and MacOS (Big Sur 11.6.1). Both installs require Node 14.8.0 to compile correctly. For Mac users, ``` npm install --legacy-peer-deps ``` is used instead of ``` npm install ``` to enable earlier React / Next / Webpack dependencies to install without errors.
+
 ``` git clone ``` this repository      
-``` cd <root> ``` directory, and then ``` npm install ```          
-``` cd ethereum ``` and  ``` ganache-cli ``` : development is set to Port 8545      
-In a new terminal: ``` truffle migrate --reset --network development ```     
+``` cd <root> ``` directory, and then:  
+``` npm install ``` (for Linux) , OR     
+``` npm install --legacy-peer-deps ``` (for MacOS)                
+``` cd ethereum ``` and  ``` ganache-cli ``` : "development" is set to Port 8545      
+In a new terminal: ``` truffle migrate --network development ```     
        
 After the contracts are deployed, copy the contract address for "CurationStation" listed in Truffle console. Open the file ``` ethereum/station.js ```  and paste the address into Line 12;         
        
@@ -79,10 +85,11 @@ If not, use the ``` Connect To MetaMask ``` button which should show the connect
 
 
 ### Migrating and Testing Smart Contracts Only    
-     
-``` git clone ``` this repository      
-``` cd <root> ``` directory, and then ``` npm install ```          
-``` cd ethereum ``` and  ``` truffle migrate ``` : test default ``` development ```  is set to Port 8545     
+
+After downloading and installation:   
+            
+``` cd ethereum ``` and  ``` truffle migrate --network development ``` : "development"  is set to Port 8545   
+        
 ``` truffle test ```  : there are seven unit tests in  ``` test/Exhibition.test.js ```   ;
     
               
