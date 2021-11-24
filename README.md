@@ -33,7 +33,7 @@ Requires Truffle / Ganache-CLI for testing and local deployment:
 Ganache-CLI: ^6.12.2   
 Truffle ^5.4.18   
     
-Requires MetaMask to run this app in the browser.    
+Requires MetaMask to run this app in the browser (Chrome / Chromium or Firefox are recommended).    
         
 NOTE: For the ``` ganache-cli ```  local deployment, please be sure to change the contract instance address in ``` ethereum/station.js ```  (see instructions below), and to paste the ``` ganache-cli ```  mnemonic into MetaMask and initialize at least THREE unique test accounts on ``` localhost port 8545 ```  before ``` npm run build ``` and ``` npm start ``` .  
 
@@ -132,6 +132,8 @@ Contains all main React pages for the app - (``` index.js ``` , ``` _app.js ``` 
 2) The proposal table does not always dynamically refresh when more patrons "Endorse", or when the Curator completes "Finalize", but can immediately update by refreshing the browser. This is also a React issue (see above). The components need to be rewritten as functional components and the "router" refresh needs a different state/props configuraton with React context. This is outside the project scope and will be done for a future release (see "Further Background" markdown file).    
    
 3) Relative vs. absolute path bug on Proposal page (Next routes): sometimes the path on the Vercel deployment changes to relative path (ex: "/exhibitions/0x00......." instead of "/exhibitions/show?address=0x00.......") after a proposal is endorsed or finalized. This can be corrected in the browser by using the back button (/curationstation.vercel.app) and refreshing the navigation.
+          
+4) MacOS ``` legacy-peer-deps ``` was required to install / run locally on Big Sur, as opposed to Linux which only required ``` npm install ```. As a result, Webpack cache logs on MacOS are disabled (two errors) in Node when compiling ``` npm run build ```. To be addressed in a future fix, and does not affect app performance.
 
 
 
