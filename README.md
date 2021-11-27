@@ -27,7 +27,7 @@ See "Further Background" markdown file for more detailed information and future 
 
 Requires Node.js 14.8.0 (specific Node version required to install and run locally - ``` nvm install 14.8.0 ``` or ``` nvm use 14.8.0 ``` in project directory)    
       
-Requires NPM 6.14.15   
+Requires NPM 6.14.15+  
    
 Requires Truffle / Ganache-CLI for testing and local deployment:  
 Ganache-CLI: ^6.12.2   
@@ -63,12 +63,14 @@ NOTE: the Exhibition Information dynamically updates the following based on chan
     
 ### Installation On A Local Host   
    
-NOTE: Truffle and Ganache-CLI should be installed globally before installation.  This local install is tested and running on Linux (Ubuntu 20.04 LTS) and MacOS (Big Sur 11.6.1). Both installs require Node 14.8.0 to compile correctly. For Mac users, ``` npm install --legacy-peer-deps ``` is used instead of ``` npm install ``` to enable earlier React / Next / Webpack dependencies to install without errors.
+NOTE: Truffle and Ganache-CLI should be installed globally before installation.  This local install is tested and running on Linux (Ubuntu 20.04 LTS) and MacOS (Big Sur 11.6.1). Both installs require Node 14.8.0 to compile correctly.   
+   
+For Mac users, ``` npm install --legacy-peer-deps ``` may be required instead of ``` npm install ``` to enable earlier React / Next / Webpack dependencies to install without errors.
 
 ``` git clone ``` this repository      
 ``` cd <root> ``` directory, and then:  
 ``` npm install ``` (for Linux) , OR     
-``` npm install --legacy-peer-deps ``` (for MacOS)                
+``` npm install --legacy-peer-deps ``` (may be required for MacOS if ``` npm install ```  results in React / Webpack errors)                   
 ``` cd ethereum ``` and  ``` ganache-cli ``` : "development" is set to Port 8545      
 In a new terminal: ``` truffle migrate --network development ```     
        
@@ -133,7 +135,7 @@ Contains all main React pages for the app - (``` index.js ``` , ``` _app.js ``` 
    
 3) Relative vs. absolute path bug on Proposal page (Next routes): sometimes the path on the Vercel deployment changes to relative path (ex: "/exhibitions/0x00......." instead of "/exhibitions/show?address=0x00.......") after a proposal is endorsed or finalized. This can be corrected in the browser by using the back button (/curationstation.vercel.app) and refreshing the navigation.
           
-4) MacOS ``` legacy-peer-deps ``` was required to install / run locally on Big Sur, as opposed to Linux which only required ``` npm install ```. As a result, Webpack cache logs on MacOS are disabled (two errors) in Node when compiling ``` npm run build ```. To be addressed in a future fix, and does not affect app performance.
+4) MacOS ``` legacy-peer-deps ``` was sometimes required to install / run locally on Big Sur, as opposed to Linux which only required ``` npm install ```. This was due to React dependencies.  As a result, Webpack cache logs on MacOS are disabled (two errors) in Node when compiling ``` npm run build ```. To be addressed in a future fix, and does not affect app performance.
 
 
 
