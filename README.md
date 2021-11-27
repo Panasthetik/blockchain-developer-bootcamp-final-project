@@ -79,18 +79,26 @@ After the contracts are deployed, copy the contract address for "CurationStation
 ``` cd <root> ``` directory, and open a new terminal;       
 ``` npm run build ``` and then ``` npm start ```            
                 
-The React app will be running on ``` localhost:3000 ```              
-           
+The React app will be running on ``` localhost:3000 ```     
+     
+Launches an empty project - there will be a main page without Exhibitions.     
+      
 Ensure MetaMask connects on ``` Localhost 8545 ``` with ChainId 1337.     
        
-If not, use the ``` Connect To MetaMask ``` button which should show the connected account and ChainId.   
+If not, use the ``` Connect To MetaMask ``` button which should show the connected account and ChainId.    
+      
+Launch an Exhibition on the main page.
 
 
 ### Migrating and Testing Smart Contracts Only    
 
 After downloading and installation:   
             
-``` cd ethereum ``` and  ``` truffle migrate --network development ``` : "development"  is set to Port 8545   
+``` cd ethereum ``` and  ``` ganache-cli ```
+
+In a separate terminal:   
+          
+``` truffle migrate --network development ``` : "development"  is set to Port 8545   
         
 ``` truffle test ```  : there are seven unit tests in  ``` test/Exhibition.test.js ```   ;
     
