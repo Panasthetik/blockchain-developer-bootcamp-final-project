@@ -60,6 +60,7 @@ class ExhibitionShow extends Component {
                 header: Title,
                 meta: 'Title',
                 description: 'Name of exhibition.',
+                style: { overflowWrap: 'break-word' }
             
             },
             
@@ -81,6 +82,7 @@ class ExhibitionShow extends Component {
                 header: CuratorName,
                 meta: 'Curator Name',
                 description: 'The name of the Curator.',
+                style: { overflowWrap: 'break-word' }
                 
             },
             {
@@ -93,6 +95,7 @@ class ExhibitionShow extends Component {
                 header: ArtKeyword,
                 meta: 'Exhibition Category',
                 description: 'The category of the show: photo, videoart etc.',
+                style: { overflowWrap: 'break-word' }
 
             },
 
@@ -105,8 +108,8 @@ class ExhibitionShow extends Component {
                 {
                 header: proposalsCount,
                 meta: 'Number of Proposals',
-                description: 'A proposal withdraws money for exhibition expenses. Must be endorsed by patrons.',
-                style: { overflowWrap: 'break-word' }
+                description: 'A proposal withdraws money for exhibition expenses. Must be endorsed by patrons.'
+                
     
                 },
                 {

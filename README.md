@@ -27,7 +27,7 @@ See "Further Background" markdown file for more detailed information and future 
 
 Requires Node.js 14.8.0 (specific Node version required to install and run locally - ``` nvm install 14.8.0 ``` or ``` nvm use 14.8.0 ``` in project directory)    
       
-Requires NPM 6.14.15+  
+Requires NPM 6.14.7+    
    
 Requires Truffle / Ganache-CLI for testing and local deployment:  
 Ganache-CLI: ^6.12.2   
