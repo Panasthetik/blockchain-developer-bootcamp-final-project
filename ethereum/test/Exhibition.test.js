@@ -58,10 +58,6 @@ contract("Exhibition", async accounts => {
         let minimumPatronage = await exhibition.minimumPatronage();
 
         assert.equal(200, minimumPatronage);
-
-        await exhibition.makeContribution({from: accounts[1], value: '1'});
-        const isPatron = await exhibition.patronEndorsers(accounts[1]);
-        assert.equal(false, isPatron);
     });
 
     it("accepts Patron contributions", async () => {

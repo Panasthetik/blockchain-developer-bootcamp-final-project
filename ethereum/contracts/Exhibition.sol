@@ -77,7 +77,8 @@ contract Exhibition {
 
 
     function makeContribution() public payable {
-        if (patronEndorsers[msg.sender] != true && msg.value >= minimumPatronage){
+        require(msg.value >= minimumPatronage, "Not enough funds");
+        if (patronEndorsers[msg.sender] != true){
      
         patronEndorsers[msg.sender] = true;
         patronEndorsersCount++;        
