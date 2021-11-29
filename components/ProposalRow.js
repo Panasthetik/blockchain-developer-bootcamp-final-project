@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Table, Button } from 'semantic-ui-react';
 import web3 from '../ethereum/web3';
 import Exhibition from '../ethereum/exhibition';
+import { Router } from '../routes';
 
 class ProposalRow extends Component {
 
@@ -11,6 +12,7 @@ class ProposalRow extends Component {
         await exhibition.methods.endorseProposal(this.props.id).send({
         from: accounts[0]
         });
+        Router.reload(window.location.pathname);
        
     };
     
@@ -20,6 +22,7 @@ class ProposalRow extends Component {
         await exhibition.methods.finalizeProposal(this.props.id).send({
             from: accounts[0]
         });
+        Router.reload(window.location.pathname);
         
     };
 

@@ -25,6 +25,7 @@ class ContributeForm extends Component {
         });
         
         Router.replaceRoute(`/exhibitions/${this.props.address}`);
+        Router.reload(window.location.pathname);
 
     } catch (err) {
         this.setState({ errorMessage: err.message });
