@@ -95,6 +95,9 @@ contract("Exhibition", async accounts => {
 
         await exhibition.createExpenseProposal("Buy supplies", "100", accounts[1], {from: accounts[0]});
         const proposal = await exhibition.expenseproposals[0];
+        const proposalcount = await exhibition.getProposalsCount();
+
+        assert.equal(proposalcount, 1);
        
     });
 
@@ -125,11 +128,13 @@ contract("Exhibition", async accounts => {
         let exhibition = await Exhibition.at(exhibitionAddress);
         
         await exhibition.makeContribution({from: accounts[1], value: '200'});
+        await exhibition.makeContribution({from: accounts[2], value: '200'});
+        await exhibition.makeContribution({from: accounts[3], value: '200'});
         let summary = await exhibition.getSummary();
         let patronEndorsersCount = summary[5].toString();
 
 
-        assert.equal(1, patronEndorsersCount);
+        assert.equal(3, patronEndorsersCount);
     });
 
 });
