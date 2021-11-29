@@ -2,6 +2,8 @@ const assert = require("assert");
 const CurationStation = artifacts.require("CurationStation");
 const Exhibition = artifacts.require("Exhibition");
 
+// For the first test, we verify that the factory contract can launch an exhibition.
+
 contract("CurationStation", async accounts => {
     it("can launch an Exhibition", async () => {
         let exhibitionAddress;
@@ -35,6 +37,8 @@ contract("CurationStation", async accounts => {
 });
 
 contract("Exhibition", async accounts => {
+
+// For the second test, we verify the new Exhibition has a Curator address assigned.
     
     it("has a Curator", async () => {
         let exhibitionAddress;
@@ -48,6 +52,8 @@ contract("Exhibition", async accounts => {
 
     });
 
+// For the third test, we establish a minimum patronage and confirm the value.
+
     it("has a minimum patronage", async () => {
         let exhibitionAddress;
         let initialBalance = await web3.eth.getBalance(accounts[1]);
@@ -59,6 +65,8 @@ contract("Exhibition", async accounts => {
 
         assert.equal(200, minimumPatronage);
     });
+
+// For the fourth test, we check if the Exhibition accepts Patron contributions / new Patrons.
 
     it("accepts Patron contributions", async () => {
         let exhibitionAddress;
@@ -74,6 +82,8 @@ contract("Exhibition", async accounts => {
 
     })
 
+// For the fifth test, we make sure Curator can create an Expense Proposal.
+
     it("allows the Curator to make an expense proposal", async () => {
         let exhibitionAddress;
         let station = await CurationStation.deployed();
@@ -87,6 +97,8 @@ contract("Exhibition", async accounts => {
         const proposal = await exhibition.expenseproposals[0];
        
     });
+
+// For the sixth test, we confirm that Expense Proposals can be processed.
  
     it("can process expense proposals.", async () => {
         let exhibitionAddress;
@@ -101,6 +113,8 @@ contract("Exhibition", async accounts => {
         await exhibition.finalizeProposal(0, { from: accounts[0], gas: "1000000"});
 
     });
+
+// For the seventh test, we confirm that the Patron count increases once per unique contributor.
    
     it("increases the Patron count once per unique contributor (address)", async () => {
         let exhibitionAddress;
