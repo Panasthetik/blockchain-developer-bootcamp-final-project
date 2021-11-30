@@ -14,8 +14,9 @@ NOTE: For the Vercel / public deployment connected to the Kovan testnet on Chain
     
     
 ### Video Walkthroughs Of This Project
-TBD   
-   
+     
+https://youtu.be/oeMj9YdlT-k 
+        
 ### About This Project 
 
 #### Background  
