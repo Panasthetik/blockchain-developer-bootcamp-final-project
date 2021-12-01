@@ -57,7 +57,7 @@ For Phase One, at the very basic level this project component allows any aspirin
       
 NOTE: the Exhibition Information dynamically updates the following based on change to smart contract state: a) Exhibition Budget (remaining), b) number of Patrons, c) Proposals count; All other values are fixed at contract creation.   
      
-4) At the Expense Proposals page, the Curator of the show can fill out a "Create Expense Proposal" form at the top of the page, ``` Create ```  it, and it will be immediately added to the "Expense Proposals" table below. This functionality is restricted to CURATORS ONLY and MetaMask will display an error if not followed.
+4) At the Expense Proposals page, the Curator of the show can fill out a "Create Expense Proposal" form at the top of the page, ``` Create ```  it, and it will be immediately added to the "Expense Proposals" table below. This functionality is restricted to CURATORS ONLY.  
    
 5) At the Expense Proposals page, Patrons (those who have contributed to the project) can "Endorse" a proposal by clicking the ``` Endorse ```  button on each proposal row.
 
@@ -149,8 +149,6 @@ Contains all main React pages for the app - (``` index.js ``` , ``` _app.js ``` 
       
 3) MacOS issues vs. Linux :  ``` npm install --legacy-peer-deps ``` was sometimes required to install / run locally on MacOS, as opposed to Linux which only required ``` npm install ```. This was due to React dependencies and the Node / NPM version in use. To fix, use Node 14.8.0 as noted above, with corresponding NPM (v. 6.7.x - 6.14.x).           
                           
-4) More exhibition information needed for each project on Current Exhibitions (Main Page) : Many attempts were made to code separate 'Mini Summary' cards to display on the home page (featuring Suggested Goal, Curator Name, Short Description, and Art Keyword at minimum). However, to iterate through an array of 'MiniSummary' structs with contract calls to the factory contract presented a lot of challenges in Solidity and React.       
-         
-It was therefore determined that this is outside this project scope. It will be examined for a redesign.
+4) More exhibition information needed for each project on Current Exhibitions (Main Page) : Many attempts were made to code separate 'Mini Summary' cards to display on the home page (featuring Suggested Goal, Curator Name, Short Description, and Art Keyword at minimum). However, to iterate through an array of 'MiniSummary' structs with contract calls to the factory contract presented a lot of challenges in Solidity and React.  It was therefore determined that this is outside this project scope. It will be examined for a redesign.
 
 

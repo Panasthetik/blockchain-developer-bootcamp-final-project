@@ -8,7 +8,7 @@ There are no timelocks, strict funding goal enforcements, refunds, or restrictio
 
 #### Future Considerations for the Project
 
-It is tempting to try and incorporate all of the latest tech in a platform. For instance, the following would be logical additions in light of the above goal:
+It is difficult to incorporate all of the latest tech in a platform and stay relevant. For instance, the following would be logical additions in light of the above goal:
 
 1) An NFT component - users have integration with OpenSea or Foundation to be able to "rep" artists and pitch collections of NFT's in a potential exhibition : virtual, physical or hybrid.
 
@@ -16,9 +16,9 @@ It is tempting to try and incorporate all of the latest tech in a platform. For 
 
 3) A decentralized identity framework such as IDX - curator profiles would be portable, reputaton-focused, and user-controlled in the context of integration with off-chain platforms such as Discord, with a potential bridge to oracles and other social Dapps. In addition, a common sign-in with Ethereum will be a priority to establish industry standards in this area.
 
-4) A bridge to off-chain art market data aggregators such as Art.net - this could be accomplished through Chainlink and a data agreement with the art aggregator.
+4) A bridge to off-chain art market data aggregators such as Artnet - this could be accomplished through Chainlink and a data agreement with the art aggregator.
 
-5) Finally, auctions and marketplaces could definitely be integrated at a "Phase 3" stage, but it might be sensible to assess the evolution of the digital art market in the near future to focus on the major players with the greatest longevity in the space.
+5) Finally, auctions and marketplaces could be integrated at a "Phase 3" stage, but it might be sensible to assess the evolution of the digital art market in the near future to focus on the major players with the greatest longevity in the space.
 
 
 
