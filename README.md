@@ -71,7 +71,7 @@ For Mac users, ``` npm install --legacy-peer-deps ``` may be required instead of
 
 ``` git clone ``` this repository      
 ``` cd <root> ``` directory, and then:  
-``` npm install ``` (for Linux) , OR     
+``` npm install ``` (for Linux / MacOS) , OR     
 ``` npm install --legacy-peer-deps ``` (may be required for MacOS if ``` npm install ```  results in React / Webpack errors)                   
 ``` cd ethereum ``` and  ``` ganache-cli ``` : "development" is set to Port 8545      
 In a new terminal: ``` truffle migrate --network development ```     
@@ -142,12 +142,14 @@ Contains all main React pages for the app - (``` index.js ``` , ``` _app.js ``` 
 
 ### Known Issues
    
-1) "An Unexpected error occurred" on Vercel (does not happen when running locally) - can be corrected by simply refreshing the browser. Probably an issue with React / Next (server-side vs. static props) - solution unknown at this time.        
+1) "An Unexpected Error Occurred" on Vercel (does not happen when running locally) - can be corrected by simply refreshing the browser. Probably an issue with React / Next (server-side vs. static props) - solution unknown at this time.        
                       
-2) The MetaMask connect button does not always refresh to show wallet connection and chainID even if just connected through MetaMask pop-up.  It can update network information simply by hitting "Connect." This is an issue with React "state" and "props" and will have to be corrected in a future update.       
+2) The MetaMask connect button does not always refresh to show wallet connection and chainID even if just connected through MetaMask pop-up.  It can update network information by the user hitting "Connect to MetaMask." This is an issue with React "state" and "props" and will have to be corrected in a future update.       
       
 3) MacOS issues vs. Linux :  ``` npm install --legacy-peer-deps ``` was sometimes required to install / run locally on MacOS, as opposed to Linux which only required ``` npm install ```. This was due to React dependencies and the Node / NPM version in use. To fix, use Node 14.8.0 as noted above, with corresponding NPM (v. 6.7.x - 6.14.x).           
                           
-4) More exhibition information needed for each project on Current Exhibitions / Main Page : Many attempts were made to code separate 'MiniSummary' cards to display on the home page (featuring Suggested Goal, Curator Name, Short Description, and Art Keyword at minimum). However, to iterate through an array of 'MiniSummary' structs with contract calls to the factory contract presented a lot of challenges in React -- and it was therefore determined that this is outside this project scope. It will be examined for a redesign.
+4) More exhibition information needed for each project on Current Exhibitions (Main Page) : Many attempts were made to code separate 'Mini Summary' cards to display on the home page (featuring Suggested Goal, Curator Name, Short Description, and Art Keyword at minimum). However, to iterate through an array of 'MiniSummary' structs with contract calls to the factory contract presented a lot of challenges in Solidity and React.       
+         
+It was therefore determined that this is outside this project scope. It will be examined for a redesign.
 
 
